@@ -108,6 +108,12 @@ class CardBrand
      */
     public static function checkValue($value)
     {
+        if (is_array($value)) {
+            return array_map(function($v) {
+                return self::checkValue($v);
+            }, $value);
+        }
+        
         $value = json_decode(json_encode($value), true); // converts stdClass into array
         if (CoreHelper::checkValueOrValuesInList($value, self::_ALL_VALUES)) {
             return $value;

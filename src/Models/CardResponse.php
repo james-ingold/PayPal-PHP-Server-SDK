@@ -295,7 +295,9 @@ class CardResponse implements \JsonSerializable
             $json['brand']                 = CardBrand::checkValue($this->brand);
         }
         if (isset($this->availableNetworks)) {
-            $json['available_networks']    = CardBrand::checkValue($this->availableNetworks);
+            $json['available_networks']    = array_map(function($network) {
+                return CardBrand::checkValue($network);
+            }, $this->availableNetworks);
         }
         if (isset($this->type)) {
             $json['type']                  = CardType::checkValue($this->type);
