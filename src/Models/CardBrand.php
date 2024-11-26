@@ -69,6 +69,8 @@ class CardBrand
 
     public const INTERLINK = 'INTERLINK';
 
+    public const ACCEL = 'ACCEL';
+
     public const UNKNOWN = 'UNKNOWN';
 
     private const _ALL_VALUES = [
@@ -97,6 +99,7 @@ class CardBrand
         self::SYNCHRONY,
         self::EFTPOS,
         self::INTERLINK,
+        self::ACCEL,
         self::UNKNOWN
     ];
 
