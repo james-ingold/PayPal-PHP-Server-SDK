@@ -73,6 +73,8 @@ class CardBrand
 
     public const PULSE = 'PULSE';
 
+    public const NYCE = 'NYCE';
+
     public const UNKNOWN = 'UNKNOWN';
 
     private const _ALL_VALUES = [
@@ -103,6 +105,7 @@ class CardBrand
         self::INTERLINK,
         self::ACCEL,
         self::PULSE,
+        self::NYCE,
         self::UNKNOWN
     ];
 
