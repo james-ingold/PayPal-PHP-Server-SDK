@@ -75,6 +75,8 @@ class CardBrand
 
     public const NYCE = 'NYCE';
 
+    public const STAR_ACCESS = 'STAR_ACCESS';
+
     public const UNKNOWN = 'UNKNOWN';
 
     private const _ALL_VALUES = [
@@ -106,6 +108,7 @@ class CardBrand
         self::ACCEL,
         self::PULSE,
         self::NYCE,
+        self::STAR_ACCESS,
         self::UNKNOWN
     ];
 
